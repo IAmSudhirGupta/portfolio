@@ -1,3 +1,27 @@
+.fade-in {
+  opacity: 100;
+  animation-name: fade-in-frame;
+  animation-duration: 5s;
+}
+.fade-out {
+  opacity: 0;
+  animation-name: fade-out-frame;
+  animation-duration: 5s;
+}
+.list-inline-item {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@key-frames fade-in-frame {
+  from{ opacity: 0 }
+  to { opacity: 100 }
+}
+
+@key-frames fade-out-frame {
+  from{ opacity: 100 }
+  to { opacity: 0 }
+}
 .profile-image {
     border-radius: 50%;
     width: 180px;
@@ -58,16 +82,16 @@ a:focus {
 }
 
 a.btn-cta-primary, .btn-cta-primary {
-  background: #54ba4e;
-  border: 1px solid #54ba4e;
+  background: rgb(37, 77, 95);
+  border: 1px solid rgb(37, 77, 95);
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 a.btn-cta-primary:hover, .btn-cta-primary:hover {
-  background: #49ac43;
-  border: 1px solid #49ac43;
+  background: rgb(50, 175, 233);
+  border: 1px solid rgb(50, 175, 233);
   color: #fff;
 }
 

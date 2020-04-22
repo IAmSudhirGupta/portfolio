@@ -23,7 +23,7 @@ class Header extends Component{
                             }
                          </ul> 
                     </div>
-                    <a className="btn btn-cta-primary float-right" href="mailto:sudhirhitit@gmail.com" target="_blank"><i className="fa fa-paper-plane"></i> Contact Me</a>              
+                    <a className="btn btn-cta-primary float-right" href="https://drive.google.com/file/d/1FFO2WJNyO2dYynRu6OIA_SAoJv1qfBax/view" target="_blank" rel="noopener noreferrer"><i className="fa fa-paper-plane"></i> Download Resume</a>              
                 </div>
             </header>
             </div>

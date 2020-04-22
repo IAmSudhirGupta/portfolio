@@ -1,17 +1,19 @@
 import React from "react";
 
-class Project extends React.Component{
-    
-    render(){
-        const { title, description, image} = this.props.project;
+const Project = (props) => {
+        const { title, client, teamSize, functionalArea, technologyUsed, description, rolesAndResponsibility, image, link} = props.project;
         return(
-            <div style = {{ display: 'inline-block', width: 400, margin: 10}}>
-                <h3>{title}</h3>
-                <img src={image} alt= {title} style ={{ height: 200, width: 300}} />
-                <p>{description}</p>
+            <div className="item row">
+                <a className="col-md-4 col-12" href= {link} target="_blank" rel="noopener noreferrer">
+                <img className="img-fluid project-image" src={image} alt={title} />
+                </a>
+                <div className="desc col-md-8 col-12">
+                    <h3 className="title"><a href= {link} target="_blank" rel="noopener noreferrer">{title} </a><span className="small place"> - { client }</span></h3>
+                    <p className="mb-2">{description}</p>
+                    <p><a className="more-link" href={link} target="_blank" rel="noopener noreferrer"><i className="fas fa-external-link-alt"></i>Read more</a></p>
+                </div>
             </div>
         );
-    }
 }
 
 export default Project;
