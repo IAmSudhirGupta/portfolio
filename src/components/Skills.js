@@ -13,8 +13,8 @@ const Skills = () =>{
                                     return(
                                         <div className="item" key={skill.id}>
                                             <h3 className="level-title" data-toggle="tooltip" data-placement="left" data-animation="true" title={skill.description}>{ skill.name }</h3>
-                                            <div className="progress" data-toggle="tooltip" data-placement="left" data-animation="true" title={skill.description} style={{ height: 10}}>
-                                                <div className="progress-bar progress-bar-striped bg-success" style={{width : skill.rating}}></div>
+                                            <div className="progress" data-toggle="tooltip" data-placement="left" data-animation="true" title={skill.description} style={{ height: 2}}>
+                                                <div className="progress-bar progress-bar-striped bg-info" style={{width : skill.rating}}></div>
                                             </div>
                                             <span class="place">{skill.description}</span>
                                             {
